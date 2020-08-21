@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/start/gulpfile.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/start/package.json" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/start/src/lib/echarts.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/start/src/lib/jquery.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/start/完整的gulpfile.js" charset="GBK" />
+  </component>
+</project>
