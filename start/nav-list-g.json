@@ -1,0 +1,303 @@
+[
+  {
+    "title": "play",
+    "type": 0,
+    "new": 0,
+    "url": "http://localhost/nubia/start/dist/pages/index.html",
+    "items": [
+      {
+        "indexImg":"../img/list-01.png",
+        "phone":"5彩斑斓黑",
+        "imgBig":"../img/list-01.png",
+        "name": "5彩斑斓黑",
+        "img": ["../img/details-01.png","../img/details-02.png","../img/details-03.png","../img/details-04.png"],
+        "id":1,
+        "type":"add",
+        "price":"3725",
+        "area": "广东省 深圳市 宝安区",
+        "time":"现货 11:00前下单，预计次日2:00点前送达",
+        "areaTitle":"地址",
+        "msg":
+          "144Hz电竞屏44Hz电竞屏：超高屏幕刷新率，每秒钟刷新144帧画面6.65英寸AMOLED屏幕240Hz屏幕触控报点率6.9ms每帧运算最高4096等级自动亮度调节德国莱茵TUV低蓝光认证分辨率：1080*2340 FHD+144Hz电竞屏6.9ms /每帧运算时间touch choreographer 算法 游戏插帧技术"
+      },
+      {
+        "indexImg":"../img/list-02.png",
+        "phone":"5湖四海蓝 8GB+128GB",
+        "imgBig":"../img/list-02.png",
+        "name": "5湖四海蓝",
+        "img": ["../img/details-01.png","../img/details-02.png","../img/details-03.png","../img/details-04.png"],
+        "id":2,
+        "type":"add",
+        "price":"2541",
+        "area": "广东省 深圳市 宝安区",
+        "time":"现货 11:00前下单，预计次日2:00点前送达",
+        "areaTitle":"地址",
+        "msg":
+        "144Hz电竞屏44Hz电竞屏：超高屏幕刷新率，每秒钟刷新144帧画面6.65英寸AMOLED屏幕240Hz屏幕触控报点率6.9ms每帧运算最高4096等级自动亮度调节德国莱茵TUV低蓝光认证分辨率：1080*2340 FHD+144Hz电竞屏6.9ms /每帧运算时间touch choreographer 算法 游戏插帧技术"
+      },
+      {
+        "indexImg":"../img/list-03.png",
+        "phone":"5颜六色白 8GB+128GB",
+        "imgBig":"../img/list-03.png",
+        "name": "5颜六色白",
+        "img": ["../img/details-01.png","../img/details-02.png","../img/details-03.png","../img/details-04.png"],
+        "id":3,
+        "type":"add",
+        "price":"3765",
+        "area": "广东省 深圳市 宝安区",
+        "time":"现货 11:00前下单，预计2:00点前送达",
+        "areaTitle":"地址",
+        "msg":
+        "144Hz电竞屏44Hz电竞屏：超高屏幕刷新率，每秒钟刷新144帧画面6.65英寸AMOLED屏幕240Hz屏幕触控报点率6.9ms每帧运算最高4096等级自动亮度调节德国莱茵TUV低蓝光认证分辨率：1080*2340 FHD+144Hz电竞屏6.9ms /每帧运算时间touch choreographer 算法 游戏插帧技术"
+      }
+    ]
+  }
+,
+  {
+    "title": "z系列",
+    "type": 0,
+    "new": 0,
+    "url": "http://localhost/nubia/start/dist/pages/index.html",
+    "items": [
+      {
+        "name": "Z20",
+        "img": "../img/list-004.png",
+        "id":4,
+        "price":"3825"
+      },
+      {
+        "name": "X",
+        "img": "../img/list-005.png",
+        "id":5,
+        "price":"3795"
+      }
+    ]
+  },
+  {
+    "title": "红魔",
+    "type": 0,
+    "new": 1,
+    "more": true,
+    "url": "http://localhost/nubia/start/dist/pages/index.html",
+    "items": [
+      {
+        "name": "红魔3S",
+        "img": "../img/list-006.png",
+        "news": "新品",
+        "id":6,
+        "price":"3775"
+      },
+      {
+        "name": "红魔5G 游戏手机",
+        "img": "../img/list-007.png",
+        "news": "新品",
+        "id":7,
+        "price":"3725"
+      },
+      {
+        "name": "红魔5G 游戏手机 氘锋版",
+        "img": "../img/list-008.png",
+        "news": "新品",
+        "id":8,
+        "price":"4725"
+      },
+      {
+        "name": "红魔5S 游戏手机",
+        "img": "../img/list-009.png",
+        "news": "",
+        "id":9,
+        "price":"8725"
+      }
+    ]
+  },
+  {
+    "title": "智能生态",
+    "url": "https://www.nubia.com/shop/intelligence",
+    "type": 1,
+    "items": [
+      {
+        "title": "新品",
+        "new": 1,
+        "more": true,
+        "items": [
+          {
+            "name": "nubia WATCH",
+            "img": "../img/list-04.png",
+            "new":true,
+            "news": "新品",
+            "id":10,
+            "price":"1234"
+          },
+          {
+            "name": "王者荣耀机器人AI智能音箱",
+            "img": "../img/list-05.png",
+            "new":true,
+            "news": "新品",
+            "id":11,
+            "price":"5555"
+          },
+          {
+            "name": "45W双口(1A+1C)氮化镓充电器",
+            "img": "../img/list-06.jpg",
+            "new":true,
+            "news": "新品",
+            "id":12,
+            "price":"6666"
+          },
+          {
+            "name": "65瓦单口（1C）氮化镓充电器",
+            "img": "../img/list-07.png",
+            "new":false,
+            "news": "新品",
+            "id":13,
+            "price":"4561"
+          }
+        ]
+      },
+      {
+        "title": "生活",
+        "new": 1,
+        "more": false,
+        "items": [
+          {
+            "name": "努比亚小新 智能速干牙刷消毒器",
+            "img": "../img/list-8.png",
+            "new":true,
+            "news": "新品",
+            "id":14,
+            "price":"3652"
+          },
+          {
+            "name": "努比亚小新 智能声波电动牙刷",
+            "img": "../img/list-9.png",
+            "new":true,
+            "news": "新品",
+            "id":15,
+            "price":"5214"
+          },
+          {
+            "name": "车载香薰",
+            "img": "../img/list-10.png",
+            "new":false,
+            "news": "",
+            "id":16,
+            "price":"5241"
+          }
+        ]
+      },
+      {
+        "title": "智能穿戴",
+        "new": 1,
+        "more": false,
+        "items": [
+          {
+            "name": "nubia WATCH",
+            "img": "../img/list-11.png",
+            "new":true,
+            "news": "新品",
+            "id":17,
+            "price":"5462"
+          },
+          {
+            "name": "努比亚阿尔法",
+            "img": "../img/list-12.png",
+            "new":false,
+            "news": "",
+            "id":18,
+            "price":"6352"
+          }
+        ]
+      },
+      {
+        "title": "创意/配件",
+        "new": 1,
+        "more": true,
+        "items": [
+          {
+            "name": "冰风散热魔盒Pro",
+            "img": "../img/list-13.jpg",
+            "new":true,
+            "news": "新品",
+            "id":19,
+            "price":"54123"
+          },
+          {
+            "name": "红魔5G/5S手机透明保护套",
+            "img": "../img/list-14.jpg",
+            "new":true,
+            "news": "新品",
+            "id":"list20",
+            "price":20
+          },
+          {
+            "name": "红魔5G游戏手机大礼包",
+            "img": "../img/list-15.png",
+            "new":false,
+            "news": "",
+            "id":21,
+            "price":"5466"
+          },
+          {
+            "name": "65W氘锋氮化镓充电器",
+            "img": "../img/list-16.png",
+            "new":false,
+            "news": "",
+            "id":22,
+            "price":"5214"
+          }
+        ]
+      },
+      {
+        "title": "创意/配件",
+        "new": 1,
+        "more": true,
+        "items": [
+          {
+            "name": "红魔战鼓便携式TWS音箱",
+            "img": "../img/list-17.png",
+            "new":false,
+            "news": "",
+            "id":23,
+            "price":"54"
+          },
+          {
+            "name": "律音耳机（新版）",
+            "img": "../img/list-18.png",
+            "new":false,
+            "news": "",
+            "id":24,
+            "price":"55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "品牌",
+    "type": 2,
+    "new": 0,
+    "more": false,
+    "url": "https://www.nubia.com/shop/brand"
+  },
+  {
+    "title": "服务",
+    "type": 2,
+    "new": 0,
+    "more": false,
+    "url": "https://www.nubia.com/active/service"
+  },
+  {
+    "title": "社区",
+    "type": 2,
+    "new": 1,
+    "more": false,
+    "url": "https://bbs.nubia.com"
+  },
+  {
+    "title": "体验店",
+    "type": 2,
+    "new": 1,
+    "more": false,
+    "url": "https://www.nubia.com/active/8934837741ec16c.html"
+  }
+]

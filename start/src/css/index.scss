@@ -8,6 +8,7 @@
   margin: 0 auto;
   background: #ffffff;
   #nav {
+    position: relative;
     .nav-top {
       width: 1200px;
       height: 60px;
@@ -30,10 +31,12 @@
       }
       .nav {
         width: 720px;
-        > ul {
+        .product {
           display: flex;
           justify-content: space-between;
           > li {
+            width: 80px;
+            height: 60px;
             a {
               display: block;
               font-size: 14px;
@@ -42,7 +45,49 @@
               text-align: center;
               width: 80px;
             }
+            .content_more{
+              >ul{
+                position: absolute;
+                z-index: 50;
+                top: 78px;
+                left: 210px;
+              }
+            }
+            .content_list{
+              position: absolute;
+              top: 60px;
+              left: 0;
+              width: 100%;
+              height: 200px;
+              background: #FFFFFF;
+              z-index: 10;
+              >ul {
+                width: 850px;
+                position: absolute;
+                top: 0;
+                left: 350px;
+                display: flex;
+                padding-top: 30px;
+                >li{
+                  margin: 0 50px;
+                  a{
+                    display: block;
+                    width: 100px;
+                    height: 150px;
+                    img {
+                      height: 100px;
+                      width: 100px;
+                    }
+                    p{
+                      height: 50px;
+                      line-height: 50px;
+                    }
+                  }
+                }
+              }
+            }
           }
+
         }
       }
       .personMessage {
@@ -62,7 +107,7 @@
           }
           .message{
             width: 360px;
-            display: block;
+            display: none;
             background: #fff;
             position: absolute;
             right: 60px;
@@ -206,6 +251,32 @@
       }
     }
   }
+  #products{
+    h2 {
+      font-size: 25px;
+      margin-left: 195px;
+      height: 75px;
+      line-height: 75px;
+    }
+    ul{
+      display: flex;
+      justify-content: space-around;
+      li{
+        text-align: center;
+        img{
+          width: 250px;
+          height: 200px;
+        }
+        div {
+          background: orange;
+          padding: 10px;
+          width: 90px;
+          margin: 10px auto;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
   #foot {
     #server {
       width: 1200px;
@@ -336,4 +407,8 @@
       }
     }
   }
+}
+.active {
+  background: #e27968;
+  color: #FFFFFF;
 }

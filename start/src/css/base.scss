@@ -1,0 +1,107 @@
+//#nav {
+//  .nav-top {
+//    width: 1200px;
+//    height: 60px;
+//    margin: 0 auto;
+//    display: flex;
+//    justify-content: space-between;
+//    align-items: center;
+//    .logo {
+//      width: 240px;
+//      > .til {
+//        display: block;
+//        width: 240px;
+//        height: 60px;
+//        background: url("../img/logo.png") no-repeat center;
+//        background-size: 100%;
+//        > h1 {
+//          text-indent: -9999px;
+//        }
+//      }
+//    }
+//    .nav {
+//      width: 720px;
+//      > ul {
+//        display: flex;
+//        justify-content: space-between;
+//        > li {
+//          a {
+//            display: block;
+//            font-size: 14px;
+//            height: 60px;
+//            line-height: 60px;
+//            text-align: center;
+//            width: 80px;
+//          }
+//        }
+//      }
+//    }
+//    .personMessage {
+//      position: relative;
+//      width: 240px;
+//      padding: 0 50px;
+//      > ul {
+//        display: flex;
+//        justify-content: space-around;
+//        > li {
+//          > a {
+//            display: block;
+//            > i {
+//              font-size: 20px;
+//            }
+//          }
+//        }
+//        .message{
+//          width: 360px;
+//          display: block;
+//          background: #fff;
+//          position: absolute;
+//          right: 60px;
+//          z-index: 5;
+//          top: 41px;
+//          >ul{
+//            margin: 0 20px;
+//            >li{
+//              display: flex;
+//              justify-content: space-between;
+//              border-bottom: 1px solid #eeeeee;
+//              &:nth-child(1){
+//                >a{
+//                  &:nth-child(1){
+//                    color: red;
+//                  }
+//                }
+//              }
+//              >a{
+//                display: inline-block;
+//                height: 50px;
+//                width: 320px;
+//                line-height: 50px;
+//                font-size: 14px;
+//
+//              }
+//              .loginImp{
+//                width: 250px;
+//              }
+//              >span {
+//                width: 135px;
+//                font-size: 14px;
+//                display: flex;
+//                justify-content: space-between;
+//                align-items: center;
+//                i{
+//                  display: inline-block;
+//                  width: 50px;
+//                }
+//                >a{
+//                  color: blue;
+//                }
+//              }
+//            }
+//
+//          }
+//        }
+//      }
+//    }
+//  }
+//}

@@ -1,0 +1,71 @@
+[
+    {
+        "itemSwiper":[
+            {
+                "img":"https://oss.static.nubia.cn/active/5f45ba050277e77.jpg",
+                "link":"https://www.nubia.com/active/kaixueji.html"
+            },
+            {
+                "img":"https://oss.static.nubia.cn/active/5ea24663911c323.jpg",
+                "link":"https://www.nubia.com/nubiaPlay"
+            },
+            {
+                "img": "https://oss.static.nubia.cn/active/5ee86dae4884b84.jpg",
+                "link": "https://www.nubia.com/redmagic5Gdao"
+            },
+            {
+                "img":"https://oss.static.nubia.cn/active/5e6a1e812f7ff62.jpg",
+                "link":"https://oss.static.nubia.cn/active/5e6a1e812f7ff62.jpg"
+            }
+        ]
+    },
+    {
+        "itemBanner":[
+            {
+                "img":"https://oss.static.nubia.cn/active/5f2d272541be286.jpg",
+                "link":"https://www.nubia.com/product/i/1106"
+            },
+            {
+                "img":"https://oss.static.nubia.cn/active/5f223842d992780.jpg",
+                "link":"https://www.nubia.com/product/s/1523"
+            },
+            {
+                "img": "https://oss.static.nubia.cn/active/5e9fad536a1c051.jpg",
+                "link": "https://www.nubia.com/recycle.php"
+            },
+            {
+                "img":"https://oss.static.nubia.cn/active/5ec78d90cc96c21.png",
+                "link":"https://www.nubia.com/active/retail.html"
+            }
+        ]
+    },
+    {
+        "itemGoodsList":[
+            {
+                "img":"https://oss.static.nubia.cn/active/5f2d272541be286.jpg",
+                "link":"https://www.nubia.com/product/i/1106",
+                "hot":"产品热评",
+                "title":"『玩转nubia UI』个性熄屏，自己掌控！",
+                "more":"了解更多"
+            },
+            {
+                "img":"https://oss.static.nubia.cn/active/5f223842d992780.jpg",
+                "link":"https://www.nubia.com/product/s/1523",
+                "hot":"产品热评",
+                "title":"『玩转nubia UI』个性熄屏，自己掌控！",
+                "more":"了解更多"
+            },
+            {
+                "img": "https://oss.static.nubia.cn/active/5e9fad536a1c051.jpg",
+                "link": "https://www.nubia.com/recycle.php"
+            },
+            {
+                "img":"https://oss.static.nubia.cn/active/5ec78d90cc96c21.png",
+                "link":"https://www.nubia.com/active/retail.html",
+                "hot":"产品热评",
+                "title":"『玩转nubia UI』个性熄屏，自己掌控！",
+                "more":"了解更多"
+            }
+        ]
+    }
+]

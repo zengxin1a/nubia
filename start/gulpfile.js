@@ -75,19 +75,19 @@ const watchHandler = ()=>{
     gulp.watch("./src/img/**",imgHandler);
 };
 
-const serverHandler = ()=>{
-    return gulp.src("./dist")
-        .pipe(webserver({
-            port:"8080",
-            open:"./pages/index.html",
-            livereload: true,
-        }))
-};
+// const serverHandler = ()=>{
+//     return gulp.src("./dist")
+//         .pipe(webserver({
+//             port:"8080",
+//             open:"./pages/cart.html",
+//             livereload: true,
+//         }))
+// };
 
 module.exports.default = gulp.series(
     delHandler,
     gulp.parallel(jsHandler,htmlHandler,imgHandler,libHandler,sassHandler),
-    serverHandler,
+    // serverHandler,
     watchHandler
 )
 
