@@ -204,10 +204,41 @@ var page = {
         $(".product").on("mouseover",".aca",function () {
             $(this).parent().siblings().find(".aca").removeClass("active");
             $(this).addClass("active")
+        })
 
+        $("body").on("mouseout",".message",function () {
+            $(this).hide()
+        }).on("mouseover",".message",function () {
+            $(this).show()
+        })
+
+        $("#products").on("mouseover","li",function () {
+            $(this).siblings().removeClass("on")
+            $(this).addClass("on")
+        })
+
+        $("#goodsDetails").on("mouseover","img",function () {
+            $(this).parent().parent().siblings().find("img").removeClass("on")
+            $(this).addClass("on")
+        }).on("mouseout","img",function () {
+            $(this).removeClass("on")
+        })
+
+        $("#goodsDetails ").on("mouseover",".learn",function () {
+            $(this).parent().parent().siblings().find(".learn").css("color","black")
+            $(this).css("color","red")
+        })
+
+        $("#goodsDetails ul").on("mouseout",".learn",function () {
+            $(this).css("color","black")
         })
     }
 }
+$(function () {
+    $(window).load(function () {
+        $("#products ul li:eq(0)").addClass("on")
+    })
+})
 
 page.navSwiper();
 page.login();

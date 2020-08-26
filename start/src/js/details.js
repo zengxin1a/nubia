@@ -32,6 +32,19 @@ var page = {
         })
     },
     cart:function () {
+        $("body").on("click",".increase",function () {
+            var num = parseInt($(".nums").html())+1;
+            $(".nums").html(num)
+        })
+
+        $("body").on("click",".reduce",function () {
+            if ($(".nums").html()>1){
+                var num = parseInt($(".nums").html())-1;
+                $(".nums").html(num)
+            } else {
+
+            }
+        })
 
         $("body").on("click",".leftCart",function () {
             var name = $(".title").html();
@@ -39,8 +52,7 @@ var page = {
             var price = $(".price").html().split("￥")[1];
             var num = $(".nums").html();
             var img = $(".bigImgLeft").attr("src");
-            
-            console.log(name+"/" + id + "/" + price + "/" + num + "/" + img)
+
 
             $.ajax({
                 url: "../../php/addwq.php",
@@ -59,9 +71,15 @@ var page = {
             })
             location.href = "./cart.html"
         })
+    },
+    common:function () {
+        $("body").on("mouseover",".inCart div",function () {
+            $(this).siblings().removeClass("active");
+            $(this).addClass("active")
+        })
     }
-
 }
 
 page.detail()
 page.cart()
+page.common()

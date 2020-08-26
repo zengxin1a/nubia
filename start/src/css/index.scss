@@ -100,6 +100,8 @@
           > li {
             > a {
               display: block;
+              height: 60px;
+              line-height: 60px;
               > i {
                 font-size: 20px;
               }
@@ -112,7 +114,7 @@
             position: absolute;
             right: 60px;
             z-index: 5;
-            top: 41px;
+            top: 60px;
             >ul{
               margin: 0 20px;
               >li{
@@ -252,6 +254,7 @@
     }
   }
   #products{
+    margin: 70px 10px;
     h2 {
       font-size: 25px;
       margin-left: 195px;
@@ -411,4 +414,9 @@
 .active {
   background: #e27968;
   color: #FFFFFF;
+}
+
+.on{
+  transform: scale(1.1);
+  transition: all 1s linear;
 }

@@ -13,7 +13,6 @@ var page = {
                         "json":data.data
                     })
                     $(".cart-container").html(htmlCart)
-
                 }
 
                 // 计算总价格

@@ -220,7 +220,7 @@ $border-red:1px solid red;
               margin-right: 10px;
             }
             .buy{
-              background: #de634f;
+              background: #eeeeee;
             }
           }
         }
@@ -428,4 +428,8 @@ $border-red:1px solid red;
       }
     }
   }
+}
+
+.active{
+  background: #de634f!important;
 }
