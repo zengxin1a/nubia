@@ -198,6 +198,7 @@ $border-red:1px solid red;
                         span {
                             font-size: 18px;
                             background: #e27968;
+                            color: #FFFFFF;
                             width: 30px;
                             height: 30px;
                             line-height: 30px;
@@ -214,6 +215,16 @@ $border-red:1px solid red;
                         //    text-align: center;
                         //    display: inline-block;
                         //}
+                    }
+                    .del{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 18px;
+                        background: #e27968;
+                        color: #FFFFFF;
                     }
                 }
                 .payFor{

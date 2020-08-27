@@ -99,7 +99,7 @@
                             <ul>
                                 <li>
                                     <a href="./login.html" class="loginImp">立即登录</a>
-                                    <span><i>无账号</i><a href="./signIn.html">立即注册</a></span>
+                                    <span id="hasUser"><i>无账号</i><a href="./signIn.html">立即注册</a></span>
                                 </li>
                                 <li>
                                     <a href="#">个人中心</a>
@@ -123,8 +123,9 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="./cart.html">
                             <i class="cart iconfont icon-cart"></i>
+                            <span class="cartSpan"></span>
                         </a>
                     </li>
                     <li>
@@ -174,6 +175,16 @@
 
         </ul>
     </div>
+
+    <div id="flashKill">
+        <div class="flash-main">
+
+        </div>
+    </div>
+
+    <div id="goTop">返回顶部</div>
+
+
     <div id="foot">
         <div id="server">
             <ul>
@@ -380,6 +391,28 @@
 <script src="../lib/echarts.js"></script>
 <script src="../lib/template-web.js"></script>
 <script src="../js/index.js"></script>
+
+<script type="text/template" id="navListTem">
+    <%for(var i=0;i<json.length;i++){%>
+        <li>
+            <a class="aca" href="https://www.nubia.com/nubiaPlay?a=show.product.show"><%=json[i].title%></a>
+            <div class="content_list">
+                <ul>
+                    <%for(var j=0;j<json[i].item.length;j++){%>
+                        <li>
+                            <a href="#">
+                                <img src="<%=json[i].item[j]%>" alt="">
+                                <p><%=json[i].article[j]%></p>
+                            </a>
+                        </li>
+                    <%}%>
+                </ul>
+            </div>
+        </li>
+    <%}%>
+</script>
+
+
 <script type="text/template" id="swipers">
     <%for(var i=0;i<json[0].itemSwiper.length;i++){%>
     <div class="swiper-slide">
@@ -428,6 +461,30 @@
     </ul>
 </script>
 
+<script type="text/template" id="flashkills">
+    <div class="flash">
+        <div class="flashTime">11:00场</div>
+        <img src="../img/flashsale.png" alt="">
+        <p>距离结束还有</p>
+        <div class="timeReduce clearfix">
+            <span class="hour"></span>
+            <i>:</i>
+            <span></span>
+            <i>:</i>
+            <span></span>
+        </div>
+    </div>
+    <ul>
+        <%for(var i=0;i<json.length;i++){%>
+        <li>
+            <img src="<%=json[i].img%>" alt="">
+            <p><%=json[i].title%></p>
+            <span><%=json[i].price%></span>
+        </li>
+        </li>
+        <%}%>
+    </ul>
+</script>
 
 </body>
 

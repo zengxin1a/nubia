@@ -1,0 +1,49 @@
+[
+  {
+    "title":"play",
+    "item":["../img/list-01.png","../img/list-02.png","../img/list-03.png"],
+    "article":["5彩斑斓黑","5湖四海蓝","5颜六色白"]
+  },
+  {
+    "title":"z系列",
+    "item":["../img/list-004.png","../img/list-005.png"],
+    "article":["Z20","X"]
+  },
+  {
+    "title":"红魔",
+    "item":["../img/list-006.png","../img/list-007.png","../img/list-008.png","../img/list-009.png"],
+    "article":["红魔5S 游戏手机","红魔5G 游戏手机 氘锋版","红魔5G 游戏手机","红魔3S"]
+  },
+  {
+    "title":"智能生态",
+    "item":["../img/list-04.png","../img/list-05.png","../img/list-06.jpg","../img/list-07.png"],
+    "article":["5彩斑斓黑","5湖四海蓝","5颜六色白"]
+
+  },
+  {
+    "title":"品牌",
+    "item":["../img/list-08.png","../img/list-05.png","../img/list-06.jpg","../img/list-07.png"],
+    "article":["nubia WATCH","王者荣耀机器人AI智能音箱","氘锋颈挂蓝牙游戏耳机","红魔 X 飞智单手游戏手柄"]
+
+  },
+  {
+    "title":"服务",
+    "item":["../img/list-04.png","../img/list-09.png","../img/list-10.png","../img/list-11.png"],
+    "article":["nubia WATCH","王者荣耀机器人AI智能音箱","氘锋颈挂蓝牙游戏耳机","红魔 X 飞智单手游戏手柄"]
+
+
+  },
+  {
+    "title":"社区",
+    "item":["../img/list-12.png","../img/list-13.jpg","../img/list-15.png","../img/list-16.png"],
+    "article":["nubia WATCH","王者荣耀机器人AI智能音箱","氘锋颈挂蓝牙游戏耳机","红魔 X 飞智单手游戏手柄"]
+
+
+  },
+  {
+    "title":"体验店",
+    "item":["../img/list-04.png","../img/list-05.png","../img/list-06.jpg","../img/list-07.png"],
+    "article":["nubia WATCH","王者荣耀机器人AI智能音箱","氘锋颈挂蓝牙游戏耳机","红魔 X 飞智单手游戏手柄"]
+
+  }
+]

@@ -64,118 +64,43 @@ var page = {
                                     <span><i>无账号</i><a href="../pages/signIn.html">立即注册</a></span>
                                 </li>`)
             $(".exit").remove()
+            $(".cartSpan").hide()
 
         })
     },
     navSearch: function () {
         $.ajax({
-            url: "../../nav-list-g.json",
+            url: "../../php/showlist.php",
             dataType: "json",
             success: function (data) {
-                console.log(data)
-                for (var i = 0; i < data.length; i++) {
-                    const item = data[i];
-                    $(".product").append(`<li><a class="aca" href="${item.url}">${item.title}</a></li>`);
+                var num = 0
+                if (data.code==1) {
+                    $.each(data.data,(index,item)=>{
+                        num+=parseInt(item.product_num);
+                        if ($("#hasUser").html()==""){
+                            $(".cartSpan").html(num)
+                        }else {
+                            $(".cartSpan").hide()
+
+                        }
+                    })
                 }
             }
         })
-    },
-    lis:function () {
+
         $.ajax({
-            url: "../../nav-list-g.json",
+            url: "../../indexNav.json",
             dataType: "json",
             success: function (data) {
-                $(".aca ").on("mouseover",function () {
-                    $(".content_list").css("display","none");
-
-
-
-
-                    // if ($(this).parent().index()==0) {
-                    //     $(this).parent().append(`
-                    //     <div class="content_list">
-                    //         <ul>
-                    //             <li>
-                    //                 <a href="${data[0].url}">
-                    //                     <img src="${data[0].items[0].indexImg}" alt="">
-                    //                     <p>${data[0].items[0].name}</p>
-                    //                 </a>
-                    //             </li>
-                    //             <li>
-                    //                 <a href="${data[0].url}">
-                    //                     <img src="${data[0].items[1].indexImg}" alt="">
-                    //                     <p>${data[0].items[1].name}</p>
-                    //                 </a>
-                    //             </li>
-                    //             <li>
-                    //                 <a href="${data[0].url}">
-                    //                     <img src="${data[0].items[2].indexImg}" alt="">
-                    //                     <p>${data[0].items[2].name}</p>
-                    //                 </a>
-                    //             </li>
-                    //         </ul>
-                    //     </div>
-                    // `)
-                    //     $(this).parent().children().eq(1).css("display","block")
-                    //
-                    // }
-                    // if ($(this).parent().index()==1) {
-                    //     $(this).parent().append(`
-                    //     <div class="content_list">
-                    //         <ul>
-                    //             <li>
-                    //                 <a href="${data[1].url}">
-                    //                     <img src="${data[1].items[0].img}" alt="">
-                    //                     <p>${data[1].items[0].name}</p>
-                    //                 </a>
-                    //             </li>
-                    //             <li>
-                    //                 <a href="${data[1].url}">
-                    //                     <img src="${data[1].items[1].img}" alt="">
-                    //                     <p>${data[1].items[1].name}</p>
-                    //                 </a>
-                    //             </li>
-                    //         </ul>
-                    //     </div>
-                    // `)
-                    //     // $(this).parent().children().eq(1).css("display","block")
-                    // }
-                    // if ($(this).parent().index()==2) {
-                    //     $(this).parent().append(`
-                    //     <div class="content_list">
-                    //         <ul>
-                    //             <li>
-                    //                 <a href="${data[2].url}">
-                    //                     <img src="${data[2].items[0].img}" alt="">
-                    //                     <p>${data[2].items[0].name}</p>
-                    //                 </a>
-                    //             </li>
-                    //             <li>
-                    //                 <a href="${data[2].url}">
-                    //                     <img src="${data[2].items[1].img}" alt="">
-                    //                     <p>${data[2].items[1].name}</p>
-                    //                 </a>
-                    //             </li>
-                    //             <li>
-                    //                 <a href="${data[2].url}">
-                    //                     <img src="${data[2].items[0].img}" alt="">
-                    //                     <p>${data[2].items[2].name}</p>
-                    //                 </a>
-                    //             </li>
-                    //             <li>
-                    //                 <a href="${data[2].url}">
-                    //                     <img src="${data[2].items[1].img}" alt="">
-                    //                     <p>${data[2].items[3].name}</p>
-                    //                 </a>
-                    //             </li>
-                    //         </ul>
-                    //     </div>
-                    // `)
-                    //     // $(this).parent().children().eq(1).css("display","block")
-                    // }
+                var navList = template("navListTem",{
+                    "json":data
                 })
+                $(".product").html(navList)
+
             }
         })
+
+
     },
     goods:function(){
         $.ajax({
@@ -198,6 +123,48 @@ var page = {
         $("#products").on("click","div", function () {
             var theId = $(this).attr("id")
             location.href = `./details.html?${theId}`;
+        })
+    },
+    flash:function(){
+        $.ajax({
+            url:"../../flash.json",
+            dataType:"json",
+            success:function (data) {
+                var flash = template("flashkills", {
+                    "json": data
+                })
+                $(".flash-main").html(flash)
+
+
+                function getTime(){
+                    // 设置时间到几点
+                    var hour = 15;
+                    var now = new Date();
+                    var h = now.getHours();
+                    h=hour - h;
+                    var m = now.getMinutes();
+                    m=59-m
+                    var s = now.getSeconds();
+                    s=59-s
+
+                    if (m==0&&s==0){
+                        h-=1
+                    }
+                    var arr = [
+                        parseInt(h),
+                        parseInt(m),
+                        parseInt(s)
+                    ];
+                    for( var i = 0 ; i < arr.length ; i++){
+                        $(".timeReduce span")[i].innerHTML = arr[i]
+                    }
+                }
+                getTime();
+
+                setInterval(function(){
+                    getTime();
+                },1000)
+            }
         })
     },
     common:function () {
@@ -232,6 +199,32 @@ var page = {
         $("#goodsDetails ul").on("mouseout",".learn",function () {
             $(this).css("color","black")
         })
+
+        $(".container").on("mouseover",".product>li",function () {
+            $(this).siblings().find(".content_list").hide()
+            $(this).find(".content_list").show()
+        }).on("mouseout",".content_list",function () {
+            $(".content_list").hide()
+        })
+
+        $(".nav-top").on("mouseout",function () {
+            $(".message").hide()
+        })
+
+        $("#goTop").on("click",function () {
+            $("html").animate({
+                scrollTop:0
+            })
+        })
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop()>60){
+                $("#nav").addClass("fix")
+            }else {
+                $("#nav").removeClass("fix")
+            }
+        })
+
     }
 }
 $(function () {
@@ -244,8 +237,8 @@ page.navSwiper();
 page.login();
 page.exit();
 page.navSearch()
-page.lis()
 page.cart()
 page.goods()
 page.detail()
+page.flash()
 page.common()
