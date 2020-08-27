@@ -3,7 +3,7 @@
     $username = $_REQUEST['username'];
     $password = $_REQUEST['password'];
 
-    $con = mysqli_connect('localhost','root','root','user');
+    $con = mysqli_connect('localhost','root','root','shop');
 
     $sql = "SELECT * FROM `info` WHERE `username`='$username' AND `password`='$password'";
 

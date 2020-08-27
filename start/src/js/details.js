@@ -47,36 +47,55 @@ var page = {
         })
 
         $("body").on("click",".leftCart",function () {
-            var name = $(".title").html();
-            var id = $(".bigImgLeft").attr("data-id");
-            var price = $(".price").html().split("￥")[1];
-            var num = $(".nums").html();
-            var img = $(".bigImgLeft").attr("src");
+
+            // console.log(88)
+            var user = localStorage.getItem("username");
+            // console.log(user)
+            if (user==null){
+                $("#tip").show()
+
+            } else {
+                var name = $(".title").html();
+                var id = $(".bigImgLeft").attr("data-id");
+                var price = $(".price").html().split("￥")[1];
+                var num = $(".nums").html();
+                var img = $(".bigImgLeft").attr("src");
 
 
-            $.ajax({
-                url: "../../php/addwq.php",
-                data:{
-                    name:name,
-                    id:id,
-                    price:price,
-                    num:num,
-                    img:img
-                },
-                type:"post",
-                dataType: "json",
-                success:function (data) {
+                $.ajax({
+                    url: "../../php/addwq.php",
+                    data:{
+                        name:name,
+                        id:id,
+                        price:price,
+                        num:num,
+                        img:img
+                    },
+                    type:"post",
+                    dataType: "json",
+                    success:function (data) {
 
-                }
-            })
-            location.href = "./cart.html"
+                    }
+                })
+                location.href = "./cart.html"
+            }
+
+
         })
     },
     common:function () {
         $("body").on("mouseover",".inCart div",function () {
             $(this).siblings().removeClass("active");
             $(this).addClass("active")
+        }).on("mouseout",".inCart",function () {
+            $(this).find("div").removeClass("active")
         })
+
+        $("#tip span").click(function () {
+            $("#tip").hide()
+        })
+
+
     }
 }
 

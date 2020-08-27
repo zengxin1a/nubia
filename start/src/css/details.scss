@@ -390,6 +390,39 @@ $border-red:1px solid red;
     }
 
   }
+  #tip {
+    display: none;
+    position: fixed;
+    top: calc(50% - 190px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 380px;
+    z-index: 50;
+    background: #eeeeee;
+    .tip ,.tip-sigIn,.tip-login{
+      width: 100px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      color: #FFFFFF;
+      background: #e27968;
+      margin: 50px auto;
+    }
+    .tip-sigIn,.tip-login{
+      display: block;
+    }
+    span {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      background: #e27968;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      color: #FFFFFF;
+    }
+  }
   #cp {
     width: 100%;
     .cp {

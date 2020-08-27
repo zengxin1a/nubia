@@ -1,4 +1,5 @@
 var page = {
+
     navSwiper: function () {
         $.ajax({
             url:"../../data1.json",
@@ -41,6 +42,7 @@ var page = {
                     "json":data
                 })
                 $("#goodsDetails ul").html(goodsList)
+
             }
         })
 
@@ -135,35 +137,41 @@ var page = {
                 })
                 $(".flash-main").html(flash)
 
-
-                function getTime(){
+                function getTime() {
                     // 设置时间到几点
-                    var hour = 15;
                     var now = new Date();
-                    var h = now.getHours();
-                    h=hour - h;
-                    var m = now.getMinutes();
-                    m=59-m
-                    var s = now.getSeconds();
-                    s=59-s
+                    var h = now.getHours()
 
-                    if (m==0&&s==0){
-                        h-=1
+                    var hour = 1;
+                    var m = now.getMinutes();
+                    m = 59 - m
+                    var s = now.getSeconds();
+                    s = 59 - s
+
+                    if (m == 0 && s == 0) {
+                        hour -= 1
                     }
+                    if (h==0){
+                        var add = h
+                        $(".flashTime").html(`${add}场`);
+                    }
+
                     var arr = [
-                        parseInt(h),
+                        hour,
                         parseInt(m),
                         parseInt(s)
                     ];
-                    for( var i = 0 ; i < arr.length ; i++){
+                    for (var i = 0; i < arr.length; i++) {
                         $(".timeReduce span")[i].innerHTML = arr[i]
                     }
+
                 }
                 getTime();
 
                 setInterval(function(){
                     getTime();
                 },1000)
+
             }
         })
     },
@@ -177,6 +185,7 @@ var page = {
             $(this).hide()
         }).on("mouseover",".message",function () {
             $(this).show()
+            $(".content_list").hide()
         })
 
         $("#products").on("mouseover","li",function () {
@@ -230,7 +239,14 @@ var page = {
 $(function () {
     $(window).load(function () {
         $("#products ul li:eq(0)").addClass("on")
+
+        if ($("#hasUser").html()==""){
+            $(".cartSpan").html(num)
+        }else {
+            $(".cartSpan").hide()
+        }
     })
+
 })
 
 page.navSwiper();
