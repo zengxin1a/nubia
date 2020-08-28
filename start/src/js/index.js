@@ -120,6 +120,18 @@ var page = {
         $(".personMessage ul li:eq(0) a").mouseover(function () {
             $(".message").show()
         })
+
+
+
+        $("body").on("click",".cart",function () {
+            var user = localStorage.getItem("username");
+            if (user==null) {
+
+            }else {
+                location.href="./cart.html"
+            }
+            return false
+        })
     },
     detail:function () {
         $("#products").on("click","div", function () {
@@ -241,7 +253,7 @@ $(function () {
         $("#products ul li:eq(0)").addClass("on")
 
         if ($("#hasUser").html()==""){
-            $(".cartSpan").html(num)
+            $(".cartSpan").show()
         }else {
             $(".cartSpan").hide()
         }

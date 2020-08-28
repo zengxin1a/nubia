@@ -47,10 +47,8 @@ var page = {
         })
 
         $("body").on("click",".leftCart",function () {
-
-            // console.log(88)
             var user = localStorage.getItem("username");
-            // console.log(user)
+
             if (user==null){
                 $("#tip").show()
 
